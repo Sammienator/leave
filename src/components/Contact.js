@@ -14,7 +14,7 @@ const Contact = () => {
 
   const onSubmit = (data) => {
     emailjs
-      .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", data, "YOUR_USER_ID")
+      .send("service_28vx80f", "template_y2b9w63", data, "t4ZVhd8_x7S9Mnzns")
       .then(() => {
         alert("Message sent successfully!");
         reset();
@@ -48,7 +48,7 @@ const Contact = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           onSubmit={handleSubmit(onSubmit)}
-          className="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-lg space-y-6"
+          className="bg-white dark:bg-gray-700 p-8 rounded-lg  text-center shadow-lg space-y-6"
         >
           <h2 className="text-3xl font-bold text-center mb-4">Contact Us</h2>
 

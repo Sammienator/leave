@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
-import { FaSun, FaMoon } from "react-icons/fa";
 
+import { Link  } from "react-router-dom"; // Renamed for clarity
+import { FaSun, FaMoon } from "react-icons/fa";
 const Header = () => {
   const [darkMode, setDarkMode] = useState(() => {
     return localStorage.getItem("theme") === "dark" || false;
@@ -26,18 +26,19 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center p-4">
         <img src="/assets/logo.png" alt="Logo" className="h-8" />
         <nav className="flex items-center space-x-4">
-          <Link to="hero" smooth duration={500} className="cursor-pointer">
+          <Link to="hero" smooth={true} duration={500} className="cursor-pointer">
             Home
           </Link>
-          <Link to="about" smooth duration={500} className="cursor-pointer">
+          <Link to="about" smooth={true} duration={500} className="cursor-pointer">
             About
           </Link>
-          <Link to="projects" smooth duration={500} className="cursor-pointer">
+          <Link to="projects" smooth={true}duration={500} className="cursor-pointer">
             Projects
           </Link>
-          <Link to="contact" smooth duration={500} className="cursor-pointer">
+          <Link to="contact" smooth={true}duration={500} className="cursor-pointer">
             Contact
           </Link>
+       
           <button
             onClick={toggleDarkMode}
             className="text-xl p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"

@@ -8,9 +8,9 @@ const Quote = () => {
 
   const onSubmit = (data) => {
     emailjs
-      .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", data, "YOUR_USER_ID")
+      .send("service_28vx80f", "template_9fjsvn5", data, "t4ZVhd8_x7S9Mnzns")
       .then(() => {
-        alert("Quote request sent successfully!");
+        alert("Thank you For Choosing Us!. Quote request sent successfully!");
         reset();
       })
       .catch((error) => console.error(error));
@@ -84,9 +84,9 @@ const Quote = () => {
                 required
               >
                 <option value="">Select Your Budget</option>
-                <option value="500-1000">Kshs15,000 - Kshs39,999</option>
-                <option value="1000-5000">Kshs40,000 - Kshs69,999</option>
-                <option value="5000+">Kshs70,000+</option>
+                <option value="15000-39999">Kshs15,000 - Kshs39,999</option>
+                <option value="40000-69999">Kshs40,000 - Kshs69,999</option>
+                <option value="70000+">Kshs70,000+</option>
               </select>
             </div>
             <div>
